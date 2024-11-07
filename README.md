@@ -1,7 +1,5 @@
 # Heart-Disease-Prediction
 
-# Heart Disease Prediction
-
 This project is a machine learning-based web application for predicting the likelihood of heart disease. The application is built with FastAPI for the API service and Docker for containerization. The trained model is deployed as a REST API that takes patient data as input and returns a prediction of whether the patient has heart disease or not.
 
 ## Project Structure
