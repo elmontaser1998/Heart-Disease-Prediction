@@ -46,7 +46,6 @@ These instructions will help you set up the project and run the application loca
    ```bash
    docker run --name container_heart -p 8000:8000 heart-disease-prediction
 ## Model Performance
-## Model Performance
 
 The following plot shows the mean accuracy scores of different models after cross-validation:
 
