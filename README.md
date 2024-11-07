@@ -47,16 +47,15 @@ These instructions will help you set up the project and run the application loca
    docker run --name container_heart -p 8000:8000 heart-disease-prediction
 
 ## API Endpoints
-   - GET / - Root endpoint to test if the API is working.
-   -P OST /predict - Endpoint for heart disease prediction.
+- GET / - Root endpoint to test if the API is working.
+-P OST /predict - Endpoint for heart disease prediction.
 ### Example Request
 To predict heart disease, send a POST request to /predict with the following JSON payload:
-    ```json
+   ```json
     {
     "features": [57, 130, 250, 135, 1.4, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0]
     }  
       
-   
-### Example Response
+
 
 
