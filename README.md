@@ -45,16 +45,29 @@ These instructions will help you set up the project and run the application loca
 3. Run the Docker container:
    ```bash
    docker run --name container_heart -p 8000:8000 heart-disease-prediction
+## Model Performance
+## Model Performance
+
+The following plot shows the mean accuracy scores of different models after cross-validation:
+
+![Cross Validation Scores](result/cross_validation_scores.png)
+
+From the above plot, the **KNeighborsClassifier** model achieved the highest mean accuracy score, making it the best model for this heart disease prediction task.
+
 
 ## API Endpoints
 - GET / - Root endpoint to test if the API is working.
--P OST /predict - Endpoint for heart disease prediction.
+- POST /predict - Endpoint for heart disease prediction.
+  
 ### Example Request
 To predict heart disease, send a POST request to /predict with the following JSON payload:
-   ```json
-    {
+   ```bash
+    curl -X POST "http://localhost:8000/predict" -H "Content-Type: application/json" -d '{
     "features": [57, 130, 250, 135, 1.4, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0]
-    }  
+     }'
+
+
+
       
 
 
